@@ -1,71 +1,84 @@
-# Getting Started with Create React App
+# Star Rating App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple React application that allows users to rate items using star icons.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Users can click on a star icon to select a rating.
+- Double-clicking on a selected star icon resets the rating to zero.
+- When hovering over the star icons, they highlight based on the hovered or selected rating.
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Clone the repository to your local machine:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```
+git clone https://github.com/your-username/star-rating-app.git
+```
 
-### `npm test`
+2. Navigate to the project directory:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+cd star-rating-app
+```
 
-### `npm run build`
+3. Install dependencies using npm or yarn:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+npm install
+```
+or
+```
+yarn install
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Usage
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To start the development server, run the following command:
 
-### `npm run eject`
+```
+npm start
+```
+or
+```
+yarn start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The application will be available at `http://localhost:3000` in your browser.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Dependencies
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The project was built using the following main dependencies:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- [React](https://reactjs.org/): A JavaScript library for building user interfaces.
+- [Create React App](https://create-react-app.dev/): A command-line tool for creating React applications with no build configuration.
+- [react-icons](https://react-icons.github.io/react-icons/): A library of icons for React projects.
+- [react-tooltip](https://react-tooltip.netlify.app/): A simple tooltip library for React.
+- [Font Awesome](https://fontawesome.com/): Icon toolkit based on CSS and Less.
 
-## Learn More
+## Project Structure
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+star-rating-app/
+  ├── public/
+  │   └── index.html
+  ├── src/
+  │   ├── components/
+  │   │   └── star-rating.component.jsx
+  │   ├── App.js
+  │   └── index.js
+  ├── package.json
+  ├── README.md
+  └── ...
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- `public/`: Contains the static HTML file.
+- `src/`: Contains the main source files.
+  - `components/`: Contains the `StarRating` component.
+  - `App.js`: The main application component.
+  - `index.js`: Entry point of the application.
+- `package.json`: Configuration file for npm packages.
 
-### Code Splitting
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# star-rating
+Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to open an issue or submit a pull request.
